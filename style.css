@@ -1,0 +1,163 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* warna background */
+body {
+  background-color: #282a36;
+}
+
+/* judul */
+.tittle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.tittle h1 {
+  background-color: #13b59d;
+  color: rgb(29, 29, 29);
+  font-size: 32px;
+  font-weight: 600;
+  width: 450px;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px 0;
+  /* box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px; */
+}
+
+/* card todo list */
+.content {
+  margin: auto;
+  background-color: #2e333d;
+  color: rgb(29, 29, 29);
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; */
+  margin-top: 35px;
+  width: 450px;
+  min-height: 350px;
+  border-radius: 10px;
+  /* box-shadow: rgba(99, 99, 99, 0.4) 0px 2px 8px 0px; */
+}
+
+/* input todo */
+.content form {
+  background-color: #2e333d;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+
+.content input[type="text"] {
+  -webkit-appearance: none !important;
+  border: 2px solid #13b59d;
+  border-radius: 20px;
+  height: 35px;
+  width: 320px;
+  background-color: #333333;
+  margin-top: 10px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  padding: 10px;
+  color: white;
+}
+
+/* tombol add todo */
+.content button {
+  /* -webkit-appearance: none !important; */
+  margin-top: 10px;
+  border: 2px solid #13b59d;
+  background-color: #13b59d;
+  color: #ffff;
+  border-radius: 20px;
+  margin-bottom: 20px;
+  width: 80px;
+  height: 30px;
+}
+
+/*  */
+.content .todo li {
+  /* -webkit-appearance: none !important; */
+  text-decoration: none;
+  list-style: square;
+  background-color: #f5f5f5;
+  /* margin-top: 10px; */
+  overflow-wrap: break-word;
+  margin: 10px 5px 0 30px;
+}
+
+.content .todo ul {
+  /* -webkit-appearance: none !important; */
+  width: 100px;
+  color: #000000;
+  margin-top: 10px;
+}
+
+.content .todo ul span {
+  /* -webkit-appearance: none !important; */
+  width: 100px;
+  background-color: red;
+  margin-top: 10px;
+}
+
+.done {
+  text-decoration: line-through;
+  color: red !important;
+}
+
+/* test */
+.list {
+  display: flex;
+  flex-direction: row;
+}
+
+#todo-list {
+  background-color: transparent;
+  background-color: #363a47 !important;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  padding: 5px;
+  border-radius: 10px;
+  color: white;
+  border: 1px solid #ae48c5;
+  max-width: 430px;
+  margin: 0 10px 10px;
+}
+
+/* .todo .list {
+  margin: auto;
+  max-width: 430px;
+  background-color: transparent;
+} */
+
+.todo .list p {
+  margin-left: 5px;
+}
+
+p,
+.done-color,
+.delete-color {
+  background-color: #363a47;
+}
+
+.done-color {
+  color: #01d3f7;
+  right: 37%;
+  position: absolute;
+  cursor: pointer;
+}
+
+.delete-color {
+  color: #fa163f;
+  right: 35%;
+  position: absolute;
+  cursor: pointer;
+}
